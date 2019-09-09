@@ -1,0 +1,21 @@
+header {
+  position: relative;
+  top: 120px;
+  height: 400px;
+  width: 100%;
+  background-color: #ed9e00;
+  background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.centre {
+  position: relative;
+  left: 40%;
+}
+
+.name {
+  position: relative;
+  left: 42.5%;
+  top: -40px;
+  color: #FFFF;
+}
