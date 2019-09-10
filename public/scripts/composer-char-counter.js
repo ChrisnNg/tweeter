@@ -15,5 +15,5 @@ $(document).ready(function() {
   }
   
   // Add listener
-  composeTweet.addEventListener('keydown', callback);
+  composeTweet.addEventListener('keyup', callback);
 });
