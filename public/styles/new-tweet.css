@@ -14,3 +14,18 @@ section {
   text-align: center;
   font-size: 15pt;
 }
+
+.counter {
+  font-family: 'Bungee', cursive;
+  font-size: 15pt;
+  float: right;
+}
+
+textarea {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background-color: #f4f1ec;
+}
