@@ -3,11 +3,15 @@ $(document).ready(function() {
   const composeTweet = document.getElementById('composeTweet');
 
   function callback() {
-    let isValid = true;
     const counter = $(this).parent().children("span.counter");
     count = $(this).val().length;
     counter.text(140 - count);
-
+    if (counter.text() < 0) {
+      counter.css('color', 'red')
+    }
+    if (counter.text() > 0) {
+      counter.css('color', 'black')
+    }
   }
   
   // Add listener
