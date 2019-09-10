@@ -21,6 +21,13 @@ body {
   font-size: 24px;
 }
 
+main {
+  position: relative;
+  top: 100px;
+  left: 5%;
+  width: 90%;
+
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
