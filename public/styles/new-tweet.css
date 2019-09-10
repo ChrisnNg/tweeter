@@ -1,0 +1,16 @@
+section {
+
+}
+
+.button {
+  font-family: 'Bungee', cursive;
+  background-color: rgb(56, 56, 165);
+  border: none;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 15pt;
+}
