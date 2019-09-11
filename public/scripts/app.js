@@ -13,8 +13,8 @@ $(document).ready(function() {
     const created_at = tweet['created_at'];
     const flags = `<i class="fas fa-flag"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i>`;
 
-    const header = $(`<header>`).text(`${name}`)
-    const span = $(`<span class="handler">`).text(`${handle}`)
+    const header = $(`<header>`).text(`${name}`);
+    const span = $(`<span class="handler">`).text(`${handle}`);
     const paragraph = $("<p>").text(`${content}`)
     const footer = $("<footer>").text(`${Math.round((Date.now() - new Date(created_at)) / (1000 * 60 * 60 * 24))} Days ago`)
 
@@ -41,6 +41,15 @@ $(document).ready(function() {
 
   $tweet.on("submit", (evt) => {
     evt.preventDefault();
+
+    const tweetLength = $("#tweet").children("textarea").val().length;
+    
+    if (!tweetLength) {
+      return alert('Tweet cannot be blank!');
+    }
+    if (tweetLength > 140) {
+      return alert(`Tweet is ${tweetLength - 140} characters over the alloted length!`);
+    }
 
     $.ajax({
       method: "POST",
