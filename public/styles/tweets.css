@@ -24,6 +24,11 @@ section p {
 footer {
   font-size: 13px;
 }
+.fas {
+  position: relative;
+  float: right;
+  color: #0F52BA;
+}
 
 .handler {
   float: right;
