@@ -45,7 +45,6 @@ $(document).ready(function() {
 
   const renderTweets = function(tweets) {
     for (let tweet of tweets) {
-      console.log(tweet);
       let newTweet = createTweetElement(tweet);
       $('#tweets-container').append(newTweet);
     }
