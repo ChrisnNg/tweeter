@@ -48,6 +48,7 @@ $(document).ready(function() {
       data: $tweet.serialize()
     })
       .then(function() {
+        $("#tweet").children("textarea").val("");
         loadTweets();
       })
       .fail(err => {
