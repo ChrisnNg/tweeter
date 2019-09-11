@@ -63,5 +63,24 @@ $(document).ready(function() {
   };
 
   renderTweets(data);
+
+  const $tweet = $('#tweet');
+
+  $tweet.on("submit", (evt) => {
+    evt.preventDefault();
+    
+    $.ajax({
+      method: "POST",
+      url: "/tweets",
+      data: $tweet.serialize()
+    })
+      .then(function(msg) {
+        console.log("Data Saved" + msg);
+      })
+      .fail(err => {
+        console.log(err);
+      });
+  });
+
 });
 
