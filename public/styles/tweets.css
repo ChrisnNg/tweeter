@@ -6,7 +6,6 @@ article {
   border: solid black;
   padding: 1em;
   margin-bottom: 1em;
-  /* box-shadow: 10px 10px; */
 }
 header {
 
@@ -31,6 +30,6 @@ footer {
   visibility: hidden;
   color: grey;
 }
-.handler:hover {
+article:hover .handler {
   visibility: visible;
 }
