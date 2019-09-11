@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     return `<article> <header><img src=${avatar} height="42" width="42"> ${name} <span class="handler">${handle}</span></header>
     <p>${content}</p>
-    <footer>${Math.round((Date.now() - new Date(created_at)) / (1000 * 60 * 60 * 24))} Days ago</footer>
+    <footer>${Math.round((Date.now() - new Date(created_at)) / (1000 * 60 * 60 * 24))} Days ago<i class="fas fa-flag"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i></footer>
     </article>`;
   };
 
