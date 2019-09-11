@@ -10,11 +10,11 @@ $(document).ready(function() {
     let avatar = tweet['user']['avatars'];
     let handle = tweet['user']['handle'];
     let content = tweet['content']['text'];
-    let date = tweet['created_at'];
+    let created_at = tweet['created_at'];
 
     return `<article> <header><img src=${avatar} height="42" width="42"> ${name} <span class="handler">${handle}</span></header>
     <p>${content}</p>
-    <footer>${date}</footer>
+    <footer>${Math.round((Date.now() - new Date(created_at)) / (1000 * 60 * 60 * 24))} Days ago</footer>
     </article>`;
   };
 
