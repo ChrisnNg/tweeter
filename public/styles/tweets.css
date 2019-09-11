@@ -5,6 +5,7 @@ section {
 article {
   border: solid black;
   padding: 1em;
+  margin-bottom: 1em;
   /* box-shadow: 10px 10px; */
 }
 header {
@@ -28,6 +29,7 @@ footer {
 .handler {
   float: right;
   visibility: hidden;
+  color: grey;
 }
 .handler:hover {
   visibility: visible;
