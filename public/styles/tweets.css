@@ -5,9 +5,15 @@ section {
 article {
   border: solid black;
   padding: 1em;
+  /* box-shadow: 10px 10px; */
 }
 header {
 
+}
+
+article:hover {
+  box-shadow: 10px 10px;
+  font-weight: bold;
 }
 
 section p {
@@ -21,4 +27,8 @@ footer {
 
 .handler {
   float: right;
+  visibility: hidden;
+}
+.handler:hover {
+  visibility: visible;
 }
