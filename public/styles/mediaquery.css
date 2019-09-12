@@ -1,0 +1,39 @@
+ /* Tablet Styles */
+ @media only screen and (min-width: 768px) {
+  nav {
+  background: transparent;
+  }
+  main.container {
+    position: relative;
+    top: -10px;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  nav {
+    background: #4056A1;
+    }
+
+  header.me {
+    position: absolute;
+    top: 15%;
+    left: 50px;
+    width: 550px;
+    height: 400px;
+  }
+  .centre {
+    top: 50px;
+  }
+  .name {
+    top: 0px;
+  }
+
+  main.container {
+    position: absolute;
+    width: 50%;
+    left: 650px;
+    top: 10%;
+    padding-right: 50px;
+  }
+}
