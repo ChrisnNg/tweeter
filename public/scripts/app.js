@@ -58,6 +58,7 @@ $(document).ready(function() {
     })
       .then(function() {
         $("#tweet").children("textarea").val("");
+        $("#tweet").children(".counter").text(140);
         $("article").addClass("loading");
         loadTweets();
       })
