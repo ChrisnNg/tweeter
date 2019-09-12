@@ -43,3 +43,7 @@ article:hover .handler {
 main p {
   overflow-wrap: break-word;
 }
+
+.loading {
+  opacity: 0.3;
+}
