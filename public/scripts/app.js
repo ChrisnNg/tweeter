@@ -43,12 +43,13 @@ $(document).ready(function() {
     evt.preventDefault();
 
     const tweetLength = $("#tweet").children("textarea").val().length;
-
+    $(".toggleEmpty").slideUp(400);
+    $(".toggleTooMany").slideUp(400);
     if (!tweetLength) {
-      return alert('Tweet cannot be blank!');
+      $(".toggleEmpty").slideDown(800);
     }
     if (tweetLength > 140) {
-      return alert(`Tweet is ${tweetLength - 140} characters over the alloted length!`);
+      $(".toggleTooMany").slideDown(800);
     }
 
     $.ajax({
@@ -87,5 +88,6 @@ $(document).ready(function() {
     $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
     $("#tweet").slideToggle(800).focus();
     $("#tweet").children("textarea").focus();
-});
+  });
+
 });
