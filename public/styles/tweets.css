@@ -29,6 +29,11 @@ footer {
   position: relative;
   float: right;
   color: #0F52BA;
+  margin: 2px;
+}
+
+i.fas {
+  visibility: hidden;
 }
 
 .handler {
@@ -37,6 +42,10 @@ footer {
   color: grey;
 }
 article:hover .handler {
+  visibility: visible;
+}
+
+article:hover .fas {
   visibility: visible;
 }
 
