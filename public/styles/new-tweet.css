@@ -16,6 +16,11 @@ section {
   margin-bottom: 3em;
 }
 
+.button:hover {
+  background-color: orange;
+  transition: 2s;
+  cursor: pointer;
+}
 .counter {
   font-family: 'Bungee', cursive;
   font-size: 15pt;
