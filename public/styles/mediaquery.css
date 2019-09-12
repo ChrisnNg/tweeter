@@ -1,12 +1,16 @@
+ /* Mobile Styles */
+ @media only screen and (max-width: 715px) {
+  nav {
+    font-size: 35px;
+  }
+} 
+ 
  /* Tablet Styles */
  @media only screen and (min-width: 768px) {
   nav {
   background: transparent;
   }
-  main.container {
-    position: relative;
-    top: -10px;
-  }
+
 }
 
 /* Desktop styles */
