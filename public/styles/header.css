@@ -10,12 +10,12 @@ header.me {
 
 .centre {
   position: relative;
-  left: 40%;
+  text-align: center;
 }
 
 .name {
   position: relative;
-  left: 42.5%;
+  text-align: center;
   top: -40px;
   color: #FFFF;
 }
