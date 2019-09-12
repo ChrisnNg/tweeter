@@ -43,7 +43,7 @@ $(document).ready(function() {
     evt.preventDefault();
 
     const tweetLength = $("#tweet").children("textarea").val().length;
-    
+
     if (!tweetLength) {
       return alert('Tweet cannot be blank!');
     }
@@ -80,4 +80,10 @@ $(document).ready(function() {
   };
   //load on page load
   loadTweets();
+
+  $(".sliding-link").click(function(e) {
+    e.preventDefault();
+    let aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+});
 });
