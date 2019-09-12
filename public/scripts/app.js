@@ -85,6 +85,7 @@ $(document).ready(function() {
     e.preventDefault();
     let aid = $(this).attr("href");
     $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+    $("#tweet").slideToggle(800).focus();
     $("#tweet").children("textarea").focus();
 });
 });
