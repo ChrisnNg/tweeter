@@ -51,7 +51,8 @@
     <main class="container">
       <section class="new-tweet">
           <h2></h2>
-          <h1 class="toggle">⚠️Error: Tweet cannot be empty.⚠️</h1>
+          <h1 class="toggleEmpty">⚠️Error: Tweet cannot be empty.⚠️</h1>
+          <h1 class="toggleTooMany">⚠️Error: Tweet has exceeded the character limit.⚠️</h1>
           <form method="POST" action="/tweets" id="tweet">
             <textarea name="text" id ="composeTweet" placeholder="What are you humming about?"></textarea><br>
             <input type="submit" value="Tweet" class="button">

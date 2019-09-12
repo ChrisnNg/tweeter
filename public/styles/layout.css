@@ -21,6 +21,11 @@ body {
   font-size: 24px;
 }
 
+h1 {
+  border: solid red;
+  color: red;
+  display: none;
+}
 main {
   position: relative;
   top: 100px;
