@@ -1,21 +1,21 @@
 header.me {
   position: relative;
-  top: 120px;
-  height: 400px;
+  height: 520px;
   width: 100%;
   background-color: #ed9e00;
-  background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .centre {
   position: relative;
   text-align: center;
+  top: 120px;
 }
 
 .name {
   position: relative;
   text-align: center;
-  top: -40px;
+  top: 80px;
   color: #FFFF;
 }
