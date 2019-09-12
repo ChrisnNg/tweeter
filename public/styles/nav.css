@@ -27,13 +27,14 @@ nav {
   right: 100px;
   bottom: 37.5px;
   color: orange;
+  text-decoration: none;
 }
 
 .fas.fa-angle-double-down:hover {
   color: orangered;
   transition: 1s;
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
