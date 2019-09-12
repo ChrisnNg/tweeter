@@ -21,3 +21,23 @@ nav {
 .source-sans-pro {
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+.fas.fa-angle-double-down {
+  position: relative;
+  right: 100px;
+  bottom: 37.5px;
+  color: orange;
+}
+
+.fas.fa-angle-double-down:hover {
+  color: orangered;
+  transition: 1s;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from {}
+  to {bottom: 1px;}
+}
