@@ -33,7 +33,7 @@ $(document).ready(function() {
   const renderTweets = function(tweets) {
     for (let tweet of tweets) {
       let newTweet = createTweetElement(tweet);
-      $('#tweets-container').append(newTweet);
+      $('#tweets-container').prepend(newTweet);
     }
   };
 
@@ -45,10 +45,10 @@ $(document).ready(function() {
     const tweetLength = $("#tweet").children("textarea").val().length;
     $(".toggleError").hide();
     if (!tweetLength) {
-      $(".toggleError").text('⚠️Error: Tweet cannot be empty.⚠️').slideDown(800);
+      return $(".toggleError").text('⚠️Error: Tweet cannot be empty.⚠️').slideDown(800);
     }
     if (tweetLength > 140) {
-      $(".toggleError").text('😱Error: Tweet has exceeded the character limit.😱').slideDown(800);
+      return $(".toggleError").text('😱Error: Tweet has exceeded the character limit.😱').slideDown(800);
     }
 
     $.ajax({
@@ -58,6 +58,7 @@ $(document).ready(function() {
     })
       .then(function() {
         $("#tweet").children("textarea").val("");
+        $("article").addClass("loading");
         loadTweets();
       })
       .fail(err => {
@@ -73,6 +74,7 @@ $(document).ready(function() {
       .then(function(data) {
         $("#tweets-container").empty();
         renderTweets(data);
+        $("article").removeClass("loading");
       })
       .fail(err => {
         console.log(err);
