@@ -24,6 +24,7 @@ section p {
 footer {
   font-size: 13px;
 }
+
 .fas {
   position: relative;
   float: right;
@@ -37,4 +38,8 @@ footer {
 }
 article:hover .handler {
   visibility: visible;
+}
+
+main p {
+  overflow-wrap: break-word;
 }
