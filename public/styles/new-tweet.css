@@ -30,3 +30,7 @@ textarea {
   outline: none;
   background-color: #f4f1ec;
 }
+
+#tweet {
+  display: none;
+}
