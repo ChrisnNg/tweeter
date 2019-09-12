@@ -43,13 +43,12 @@ $(document).ready(function() {
     evt.preventDefault();
 
     const tweetLength = $("#tweet").children("textarea").val().length;
-    $(".toggleEmpty").slideUp(400);
-    $(".toggleTooMany").slideUp(400);
+    $(".toggleError").slideUp(400);
     if (!tweetLength) {
-      $(".toggleEmpty").slideDown(800);
+      $(".toggleError").text('⚠️Error: Tweet cannot be empty.⚠️').slideDown(800);
     }
     if (tweetLength > 140) {
-      $(".toggleTooMany").slideDown(800);
+      $(".toggleError").text('⚠️Error: Tweet has exceeded the character limit.⚠️').slideDown(800);
     }
 
     $.ajax({
