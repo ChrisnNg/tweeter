@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
-  // --- our code goes here ---
+  // --- Creates a tweet element and returns it ---
   const createTweetElement = function(tweet) {
     const name = tweet['user']['name'];
     const avatar = tweet['user']['avatars'];
@@ -15,12 +15,12 @@ $(document).ready(function() {
 
     const header = $(`<header>`).text(`${name}`);
     const span = $(`<span class="handler">`).text(`${handle}`);
-    const paragraph = $("<p>").text(`${content}`)
-    const footer = $("<footer>").text(`${Math.round((Date.now() - new Date(created_at)) / (1000 * 60 * 60 * 24))} Days ago`)
+    const paragraph = $("<p>").text(`${content}`);
+    const footer = $("<footer>").text(`${Math.round((Date.now() - new Date(created_at)) / (1000 * 60 * 60 * 24))} Days ago`);
 
-    header.prepend(`<img src=${avatar} height="42" width="42">`)
-    header.append(span)
-    footer.append(flags)
+    header.prepend(`<img src=${avatar} height="42" width="42">`);
+    header.append(span);
+    footer.append(flags);
 
     let newTweet = $('<article>')
       .append(header)
@@ -38,7 +38,7 @@ $(document).ready(function() {
   };
 
   const $tweet = $('#tweet');
-
+  // ---- On submit, validate tweetlength, clear textarea, reset char-counter then fetch /tweets via AJAX ---
   $tweet.on("submit", (evt) => {
     evt.preventDefault();
 
