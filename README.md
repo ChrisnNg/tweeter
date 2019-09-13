@@ -4,16 +4,24 @@ Tweeter is a simple, single-page Twitter clone.
 
 This was built to practice my HTML, CSS, JS, jQuery and AJAX front-end skills, and my Node, Express and MongoDB back-end skills.
 This project:
-  Composing Tweets are hidden until the 'Write a new Tweet' down arrow is clicked, which then animatedly slides the composer into view.
-  Everytime you submit a tweet, a profile will appear that 'tweets' that very message.
-    Tweets are limited to 1-140 characters, with HTML coded error messages that appear if limits are invalidated.
-    Characters are calculated on 'keyup' in real-time to keep the user updated about how many characters they have left.
-  Profile picture is dependent on '/public/images/profile-hex.png' and can be replaced with the same name to replace the picture.
-  Hovering over a 'tweet' will focus the 'tweet' and reveal the 'handle' and likes/retweet/report flags
-  Secure:
-    tweets are locked to text only and scripts that try to empty out the database and the like, will be outputed backout as plain-text.
-  MediaQuery:
-    Product shifts to accomondate viewing from desktops, tablets, and mobiles.
+<ol>
+  <li>Composing Tweets are hidden until the 'Write a new Tweet' down arrow is clicked, which then animatedly slides the composer into view.</li>
+  <li>Everytime you submit a tweet, a profile will appear that 'tweets' that very message.</li>
+  <ol>
+    <li>Tweets are limited to 1-140 characters, with HTML coded error messages that appear if limits are invalidated.</li>
+    <li>Characters are calculated on 'keyup' in real-time to keep the user updated about how many characters they have left.</li>
+  </ol>
+  <li>Profile picture is dependent on '/public/images/profile-hex.png' and can be replaced with the same name to replace the picture.</li>
+  <li>Hovering over a 'tweet' will focus the 'tweet' and reveal the 'handle' and likes/retweet/report flags</li>
+  <li>Secure:</li>
+  <ol>
+    <li>tweets are locked to text only and scripts that try to empty out the database and the like, will be outputed backout as plain-text.</li>
+  </ol>
+  <li>MediaQuery:</li>
+  <ol>
+    <li>Product shifts to accomondate viewing from desktops, tablets, and mobiles.</li>
+  </ol>
+</ol>
 
 ## Final Product
 
