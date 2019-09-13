@@ -10,6 +10,7 @@ Some details about this project...
   <ol>
     <li>Tweets are limited to 1-140 characters, with HTML coded error messages that appear if limits are invalidated.</li>
     <li>Characters are calculated on 'keyup' in real-time to keep the user updated about how many characters they have left.</li>
+    <li>Composing a tweet features a temporary 'loading' class on the tweets to induce opacity while waiting for retrieval of tweets</li>
   </ol>
   <li>Profile picture is dependent on '/public/images/profile-hex.png' and can be replaced with the same name to replace the picture.</li>
   <li>Hovering over a 'tweet' will focus the 'tweet' and reveal the 'handle' and likes/retweet/report flags</li>
