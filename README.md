@@ -3,7 +3,7 @@
 Tweeter is a simple, single-page Twitter clone.
 
 This was built to practice my HTML, CSS, JS, jQuery and AJAX front-end skills, and my Node, Express and MongoDB back-end skills.
-This project:
+Some details about this project...
 <ol>
   <li>Composing Tweets are hidden until the 'Write a new Tweet' down arrow is clicked, which then animatedly slides the composer into view.</li>
   <li>Everytime you submit a tweet, a profile will appear that 'tweets' that very message.</li>
@@ -40,6 +40,6 @@ This project:
 
 - Express
 - Node 5.10.x or above
-  Body-parser^1.15.2
-  Chance ^1.0.2
-  Md5 ^2.1.0
+- Body-parser^1.15.2
+- Chance ^1.0.2
+- Md5 ^2.1.0
