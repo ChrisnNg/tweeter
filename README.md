@@ -16,7 +16,7 @@ Some details about this project...
   <li>Hovering over a 'tweet' will focus the 'tweet' and reveal the 'handle' and likes/retweet/report flags</li>
   <li>Secure:</li>
   <ol>
-    <li>tweets are locked to text only and scripts that try to empty out the database and the like, will be outputed backout as plain-text.</li>
+    <li>Tweets are prevent scripting. Scripts that try to empty out the database and the like, will be outputed as plain-text.</li>
   </ol>
   <li>MediaQuery:</li>
   <ol>
@@ -24,7 +24,7 @@ Some details about this project...
   </ol>
 </ol>
 
-## Final Product
+## [Final Product](https://tweeter-chris.herokuapp.com/)
 
 !["screenshot of desktop-view"](https://github.com/ChrisnNg/tweeter/blob/master/public/images/desktop-view.png?raw=true)
 !["screenshot of tablet-view"](https://github.com/ChrisnNg/tweeter/blob/master/public/images/tablet-view.png?raw=true)
@@ -34,7 +34,7 @@ Some details about this project...
 
 1. Fork this repository, then clone your fork of this repository.
 2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
+3. Start the web server using the `npm start` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
 ## Dependencies
