@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone. [Hosted VIA Heroku](https://tweeter-chris.herokuapp.com/)
 
-This was built to practice my HTML, CSS, JS, jQuery and AJAX front-end skills, and my Node, Express and MongoDB back-end skills.
+This was built to practice my HTML, CSS, JS, jQuery and AJAX front-end skills, and my Node, Express and back-end skills.
 Some details about this project...
 <ol>
   <li>Composing Tweets are hidden until the 'Write a new Tweet' down arrow is clicked, which then animatedly slides the composer into view.</li>
