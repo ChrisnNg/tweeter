@@ -1,4 +1,29 @@
-# Tweeter Project
+### Tweeter | Single-Page Twitter Clone
+
+A responsive microblogging platform demonstrating full-stack development skills
+
+Key Features:
+- 🐦 Interactive Tweet Composer
+
+      Animated slide-down form with real-time character counter
+
+      Client-side validation (140-character limit with error messaging)
+
+      Loading states during API requests
+  
+- 🛡️ Secure Content Handling
+
+      XSS protection with text sanitization
+
+      Script injection prevention
+
+- 📱 Fully Responsive Design
+
+      Adaptive layout for desktop/tablet/mobile
+
+      Hover states for tweet interactions (likes/flags)
+
+Tech Stack: `HTML5` | `CSS3` | `JavaScript` | `jQuery` | `AJAX` | `Node.js` | `Express`| `Heroku`
 
 Tweeter is a simple, single-page Twitter clone. [Hosted VIA Heroku](https://tweeter-chris.herokuapp.com/)
 
